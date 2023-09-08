@@ -159,8 +159,9 @@ p {
 
 /* Second Section */
 .skill-title {
+    font-family: 'Montserrat', sans-serif;
     padding-left: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--main);
     text-align: center;
 }
