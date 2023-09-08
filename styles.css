@@ -26,6 +26,31 @@ body, ul, li {
     font: var(--white);
 }
 
+p {
+    color: var(--white);
+}
+
+
+
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
+}
+
 
 
 
@@ -133,22 +158,40 @@ body, ul, li {
 
 
 /* Second Section */
+.skill-title {
+    padding-left: 20px;
+    font-size: 2rem;
+    color: var(--main);
+    text-align: center;
+}
 .skill-set {
     background-color: var(--dark);
     color: var(--white);
-    padding: 20px;
-    width: 300px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-    overflow-y: scroll; /* Enable vertical scrolling */
+    padding: 0 30px 30px 40px;
+    width: 100%; /* Full width initially */
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping of skills */
+    gap: 20px; /* Adjust the gap between skills */
+    position: absolute;
 }
 
 .skill {
+    flex: 1; /* Equal width for each skill */
+    min-width: calc(50% - 20px); /* Adjust the percentage for the number of columns */
     margin-bottom: 20px;
 }
 
 summary {
     font-weight: bold;
+    font-size: 2rem;
 }
+
+
+
+
+
+
+
 
 
 
@@ -207,7 +250,7 @@ summary {
         text-shadow: 0 0 0px var(--main), 0 0 0px var(--main), 0 0 3px var(--main);
     }
     100% {
-        text-shadow: 0 0 15px var(--main);
+        text-shadow: 0 0 10px var(--main);
     }
 }
 
@@ -216,6 +259,6 @@ summary {
         text-shadow: 0 0 0px var(--main), 0 0 0px var(--main), 0 0 0px var(--main);
     }
     100% {
-        text-shadow: 0 0 5px var(--main), 0 0 10px var(--main), 0 0 20px var(--main);
+        text-shadow: 0 0 5px var(--main);
     }
 }
