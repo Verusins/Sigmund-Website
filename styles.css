@@ -178,12 +178,12 @@ p {
 .skill {
     flex: 1; /* Equal width for each skill */
     min-width: calc(50% - 20px); /* Adjust the percentage for the number of columns */
-    margin-bottom: 20px;
+    margin: 12px 0 18px;
 }
 
 summary {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 
